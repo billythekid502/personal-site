@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>项目 | 我的 Portfolio</title>
+  <meta name="description" content="项目列表与案例详情。" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html" aria-label="返回首页">我的 Portfolio</a>
+      <button id="nav-toggle" aria-controls="site-nav" aria-expanded="false" type="button">菜单</button>
+      <nav id="site-nav" aria-label="主导航" aria-hidden="true">
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="index.html" aria-current="page">项目</a></li>
+          <li><a href="../about/index.html">关于</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="nav-overlay" aria-hidden="true"></div>
+
+  <main>
+    <section aria-labelledby="projects-title">
+      <div class="container">
+        <h1 id="projects-title">项目</h1>
+        <p>以下是部分代表性项目，可按需要扩展为更多分类或案例详情页。</p>
+        <div class="card-grid">
+          <article class="card">
+            <div class="badge">产品</div>
+            <h2>项目名称 A</h2>
+            <p>角色：前端/IA。目标：优化信息结构与转化。</p>
+            <p>成果：简述关键指标与影响。</p>
+          </article>
+          <article class="card">
+            <div class="badge">体验</div>
+            <h2>项目名称 B</h2>
+            <p>角色：前端/IA。目标：提升可用性与性能。</p>
+            <p>成果：简述关键指标与影响。</p>
+          </article>
+          <article class="card">
+            <div class="badge">系统</div>
+            <h2>项目名称 C</h2>
+            <p>角色：前端/IA。目标：统一设计系统与内容模型。</p>
+            <p>成果：简述关键指标与影响。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 你的名字。保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>关于 | 我的 Portfolio</title>
+  <meta name="description" content="关于我与工作方式。" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html" aria-label="返回首页">我的 Portfolio</a>
+      <button id="nav-toggle" aria-controls="site-nav" aria-expanded="false" type="button">菜单</button>
+      <nav id="site-nav" aria-label="主导航" aria-hidden="true">
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../projects/index.html">项目</a></li>
+          <li><a href="index.html" aria-current="page">关于</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="nav-overlay" aria-hidden="true"></div>
+
+  <main>
+    <section aria-labelledby="about-title">
+      <div class="container">
+        <h1 id="about-title">关于我</h1>
+        <p>我是一名注重结构与体验的前端工程师与信息架构师，擅长将复杂内容拆解为可理解、可扩展的系统。</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="approach-title">
+      <div class="container">
+        <h2 id="approach-title">工作方式</h2>
+        <ul>
+          <li>研究用户与业务目标，建立信息结构与内容模型。</li>
+          <li>设计导航与页面层级，保证可发现性与可维护性。</li>
+          <li>以语义化与可访问性为基础实现页面。</li>
+          <li>持续迭代，围绕真实反馈优化。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">技能与工具</h2>
+        <ul>
+          <li>信息架构与内容策略</li>
+          <li>语义化 HTML 与可访问性</li>
+          <li>CSS 架构与组件化思维</li>
+          <li>性能与可维护性优化</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 你的名字。保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

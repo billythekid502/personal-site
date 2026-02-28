@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" alt="Logo" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button type="button" class="menu-close" onclick="closemenu()" aria-label="Close menu">X</button>
+        <button type="button" class="menu-open" onclick="openmenu()" aria-label="Open menu">☰</button>
+      </nav>
+      <div class="header-text">
+        <p>AI + Vibe Coding</p>
+        <h1>Hi, I'm <span>William Li</span></h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="User" />
+        </div>
+        <div class="about-col-2">
+          <h2 class="sub-title">About Me</h2>
+          <p>
+            I’m a builder at heart. I vibe code to turn ideas into working software—prototypes,
+            utilities, and little tools that solve real problems. My portfolio is where I share
+            what I’m making.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br />Designing Web Interfaces</li>
+              <li><span>Web Development</span><br />Web App Development</li>
+              <li><span>App Development</span><br />Building Mobile Apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024 - Current</span><br />Front-End Engineer</li>
+              <li><span>2022 - 2024</span><br />UI Developer</li>
+              <li><span>2020 - 2022</span><br />Web Designer</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2016 - 2020</span><br />B.Sc. in Computer Science</li>
+              <li><span>2014 - 2016</span><br />Diploma in Web Design</li>
+              <li><span>2012 - 2014</span><br />Higher Secondary Education</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="sub-title">Services</h2>
+      <div class="services-list">
+        <div>
+          <h3>Web Design</h3>
+          <p>Designing modern, accessible, and responsive web experiences.</p>
+          <a href="https://example.com" target="_blank" rel="noopener">Learn more</a>
+        </div>
+        <div>
+          <h3>Front-End Development</h3>
+          <p>Building fast and scalable interfaces with clean architecture.</p>
+          <a href="https://example.com" target="_blank" rel="noopener">Learn more</a>
+        </div>
+        <div>
+          <h3>Information Architecture</h3>
+          <p>Structuring content for clarity, discoverability, and growth.</p>
+          <a href="https://example.com" target="_blank" rel="noopener">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="sub-title">My Work</h2>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work1.png" alt="Work 1" />
+          <div class="layer">
+            <h3>Project One</h3>
+            <p>A short description of the project and its impact.</p>
+            <a href="https://example.com" target="_blank" rel="noopener">View</a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work2.png" alt="Work 2" />
+          <div class="layer">
+            <h3>Project Two</h3>
+            <p>A short description of the project and its impact.</p>
+            <a href="https://example.com" target="_blank" rel="noopener">View</a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work3.png" alt="Work 3" />
+          <div class="layer">
+            <h3>Project Three</h3>
+            <p>A short description of the project and its impact.</p>
+            <a href="https://example.com" target="_blank" rel="noopener">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h2 class="sub-title">Contact Me</h2>
+          <p>yli13825610121@gmail.com</p>
+          <p>+1 5104151069</p>
+          <div class="social-icons">
+            <a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://twitter.com/yourname" target="_blank" rel="noopener">Twitter</a>
+          </div>
+          <a href="images/mycv.pdf" class="btn btn2" download>Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p>Copyright © Your Name.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
